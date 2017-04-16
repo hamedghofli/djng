@@ -5,5 +5,5 @@ run this commands in myt folder: <br />
 and <br />
 	python manage.py migrate <br />
 
-then
+then <br />
 	python manage.py runserver
