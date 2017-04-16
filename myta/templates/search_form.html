@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block title %}search from{% endblock %}
+
+{% block content %}
+
+	<form action="/search/" method="get">
+		<input type="text" name="Email" placeholder="Email Address">
+		<input type="submit" value="Search">
+	</form>
+
+	{% if persons %}
+		<ul>
+		{% for person in persons %}
+			<li>{{ person }}</li>
+			<hr>
+		{% endfor %}
+		</ul>
+	{% endif %}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block title %}results{% endblock %}
+
+
+{% block content %}
+	<form method="get" action="/submit/">
+	
+		<label for="Email">Email:</label>
+		<input type="text" name="Email" value="{{ email }}" />
+		<hr>
+		
+		<label for="Name">Name:</label>
+		<input type="text" name="Name"  value="{{ fname }}"/>
+		<hr>
+		
+		<label for="Last_Name">Last name:</label>
+		<input type="text" name="Last_Name" value="{{ lname }}" />
+		<hr>
+
+		<input type="submit" name="submit" value="Submit"  />
+	</form>
+	
+	{% if empty %}
+		<p>you must fill all input.</p>
+	{% endif %}
+{% endblock %}
+
