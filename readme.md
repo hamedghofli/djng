@@ -1,6 +1,9 @@
-django version 1.9.13
+django version 1.9.13<br />
 
-run this commands in myt folder:
-	python manage.py startapp myta
-and
-	python manage.py migrate 
+run this commands in myt folder: <br />
+	python manage.py startapp myta <br />
+and <br />
+	python manage.py migrate <br />
+
+then
+	python manage.py runserver
